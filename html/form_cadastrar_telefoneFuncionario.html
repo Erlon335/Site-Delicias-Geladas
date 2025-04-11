@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fontes.css">
+</head>
+<body>
+    <h2 class="subtitulo">Cadastrar Telefone para Funcionário</h2>
+    <form method="POST" action="../php/cadastrar_telefoneFuncionario.php">
+        <label>ID do Funcionário:</label>
+        <input type="number" name="idFuncionario" required>
+    
+        <label>Telefone 1:</label>
+        <input type="text" name="telefones[]" required>
+    
+        <label>Telefone 2 (Opcional):</label>
+        <input type="text" name="telefones[]">
+    
+        <label>Telefone 3 (Opcional):</label>
+        <input type="text" name="telefones[]">
+    
+        <button type="submit">Cadastrar Telefone(s)</button>
+    </form>
+    
+</body>
+</html>

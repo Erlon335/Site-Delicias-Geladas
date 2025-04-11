@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fontes.css">
+</head>
+<body>
+    <h2 class="subtitulo">Cadastrar Contato para Empresa</h2>
+    <form method="POST" action="../php/cadastrar_contato.php">
+        <label>CNPJ da Empresa:</label>
+        <input type="text" name="cnpj" required>
+    
+        <label>Tipo de Contato:</label>
+        <select name="tipo" required>
+            <option value="Telefone">Telefone</option>
+            <option value="E-mail">E-mail</option>
+            <option value="Redes Sociais">Redes Sociais</option>
+        </select>
+    
+        <label>Valor:</label>
+        <input type="text" name="valor" required>
+    
+        <label>Observação (Opcional):</label>
+        <textarea name="observacao"></textarea>
+    
+        <button type="submit">Cadastrar Contato</button>
+    </form>
+    
+    
+</body>
+</html>

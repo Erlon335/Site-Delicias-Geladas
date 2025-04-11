@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fontes.css">
+</head>
+<body>
+    <h2 class="subtitulo">Remover Contato</h2>
+    <form method="POST" action="../php/remover_contato.php">
+        <label>ID do Contato:</label>
+        <input type="number" name="idContato" required>
+    
+        <label>CNPJ da Empresa:</label>
+        <input type="text" name="cnpj" required>
+    
+        <button type="submit">Remover Contato</button>
+    </form>
+    
+</body>
+</html>

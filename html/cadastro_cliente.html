@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fontes.css">
+</head>
+<body>
+    <h2 class="subtitulo">Cadastrar Cliente</h2>
+    <form method="post" action="../php/cadastro_cliente.php">
+        Nome: <input type="text" name="nomeCliente" required><br>
+        Cidade: <input type="text" name="cidade" required><br>
+        UF: <input type="text" name="uf" maxlength="2" required><br>
+        Rua: <input type="text" name="rua" required><br>
+        Número: <input type="text" name="numero" required><br>
+        Bairro: <input type="text" name="bairro" required><br>
+        CEP: <input type="text" name="cep" maxlength="8" required><br>
+        Telefone: <input type="text" name="telefone" required><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
